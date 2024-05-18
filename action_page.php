@@ -14,10 +14,10 @@ if ($conn->connect_error) {
 }
 
 // Get form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+$name = $_GET['name'];
+$email = $_GET['email'];
+$subject = $_GET['subject'];
+$message = $_GET['message'];
 
 // SQL to insert data into table
 $sql = "INSERT INTO contact_messages (name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
