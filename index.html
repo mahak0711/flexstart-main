@@ -779,14 +779,13 @@ We are committed to understanding and addressing the unique needs of both aspiri
           </div>
           </div>
           <div class="col-6" style="width: 473px;margin-left: 45px;background-color:  rgb(241, 255, 252);" >
-            <form action="/action_page.php">
-              
-              <input type="text" class="inname" value="Your Name">
-              <input type="text" class="inemail" value="Your Email">
-              <input type="text" class="insub" value="Subject">
-              <br><input type="text" class="inmessage"  value="Message">
-              <br><input class="sendButton" type="submit" value="Send Message">
-            </form> 
+             <form action="/action_page.php" method="post">
+                <input type="text" class="inname" name="name" value="Your Name">
+                <input type="text" class="inemail" name="email" value="Your Email">
+                <input type="text" class="insub" name="subject" value="Subject">
+                <br><input type="text" class="inmessage" name="message" value="Message">
+                <br><input class="sendButton" type="submit" value="Send Message">
+            </form>
           </div>
         </div>
     </section>
